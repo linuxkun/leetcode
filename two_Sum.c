@@ -16,9 +16,8 @@ int *twoSum(int *nums,int numsSize,int target)
 	for(i = 0;i < numsSize - 1;i++) {
 		for(j = i+1;j < numsSize;j++) {
 			if(temp[i] + temp[j] == target) {
-				res[0] = temp[i];
-				res[1] = temp[j];
-				printf(" %d %d \n",res[0],res[1]);
+				res[0] = i;
+				res[1] = j;
 				return res;
 			}
 		}	
